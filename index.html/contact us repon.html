@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                     
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact me</title>
+<link rel="icon" href="logo-removebg-preview.png" type="image/png">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+                            padding: 0;
+                            margin: 0;
+                            box-sizing: border-box;
+                        }
+                        
+                        form{
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 100vh;
+                            padding: 40px 60px;
+                           
+                            
+                        }
+                        
+                        .form-content{
+                            background-color: rgb(229, 237, 241);
+                            text-align: center;
+                            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+                            color: #000;
+                            width: 1050px;
+                            border-radius: 10px;
+                            padding: 10px 40px;
+                            border-color: #fff;
+                            color: #fff;
+                        }
+                        legend{
+                            margin-top: 20px;
+                            color: #000;
+                            font-size: 30px;
+                        }
+                        ::placeholder{
+                            font-size: 20px;
+                        }
+                        .name, .email, .msg{
+                            margin-top: 10px;
+                        }
+                        .name{
+                            margin-top: 20px;
+                        }
+                        .name input{
+                            width: 100%;
+                            height: 50px;
+                            border: none;
+                            border-bottom: 1px solid rgb(209, 206, 206);
+                            outline: none;
+                            background: transparent;
+                            font-size: 20px;
+                        }
+                        .email{
+                            margin-top: 20px;
+                            color: #fff;
+                        }
+                        .email input{
+                            width: 100%;
+                            height: 50px;
+                            border: none;
+                            border-bottom: 1px solid rgb(179, 168, 168);
+                            outline: none;
+                            background: transparent;
+                            font-size: 20px;
+                        }
+                        .msg{
+                            margin-top: 20px;
+                        }
+                        .msg input{
+                            width: 100%;
+                            height: 50px;
+                            border: none;
+                            border-bottom: 1px solid rgb(184, 179, 179);
+                            outline: none;
+                            background: transparent;
+                            font-size: 20px;
+                        }
+                        
+                        
+                        }
+                        @media (max-width: 940px) {
+                            .form-content{
+                                width: 100%;
+                                margin-top: 190px;
+                            }
+                            .form-content .name, .email, .msg{
+                                min-width: 100%;
+                            }
+                        }
+                        @media (max-width: 425px) {
+                            form{
+                                padding: 10px 0px;
+                            }
+                            form{
+                                margin-top: 90px;
+                                width: 250px;
+                                position: absolute;
+                            }
+                            .form-content{
+                                background-color: white;
+                                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+                                color: #000;
+                                margin-left: 10px;
+                                margin-top: 50px;
+                                width: 300px;
+                                
+                                margin-right: 10px;
+                            }
+                        }
+
+
+
+
+                        .button{
+            position: absolue;
+            margin-top: 50px;
+            margin-left: 50%;
+            transform: translate(-50%, -50%);
+            width: 170px;
+            height: 55px;
+            background: linear-gradient(110deg,#5957ee, rgb(65, 175, 238),rgb(26, 84, 88), rgb(23, 56, 243),rgb(121, 25, 211));
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button a{
+            display:block;
+             width: 165px; 
+             height:50px; 
+             background:#26242e; 
+             border-radius:5px;
+              text-align:center; 
+              line-height:50px; 
+              text-decoration:none;
+               color:#fff; 
+               font-size:1.2rem;
+        }
+        .button{
+            animation:effect .9s linear infinite;
+        }
+        @keyframes effect{
+            0%{
+                background-position: 0%;
+            }
+            100%{
+                background-position: -200px;
+            }
+            
+        }
+        .butt{
+                width: 163px;
+                height: 48px;
+                background-color: rgb(129, 115, 115);
+                border: none;
+                font-size: x-large;
+                fo
+            }
+
+
+            .container{
+                display: inline-block ;
+                margin: 20%;
+
+            }
+            .text{
+                overflow: hidden;
+                font-size: 3.6rem;
+                font-weight: 700;
+                border-right:  .15em solid red;
+                white-space: nowrap;
+                animation: typing  steps(28,end)   forwards infinite 6s;
+            }
+            @keyframes typing{
+                form{
+                    width: 0;
+                }
+                
+            }
+            @keyframes blink{
+                50%{
+                    border-color: transparent;
+                }
+                
+            }*/
+
+            *{
+        padding: 0%;
+        margin: 0%;
+    }
+    
+.logo i:hover{
+    transition: 2s;
+    transform: scale(1.5);
+   }
+   nav .logo{
+    font-size: 43px;
+    color: aliceblue;
+   }
+    nav{
+        height: 80px;
+        background-color: #1b1b1b;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px 0 100px;
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+    }
+    nav ul li a{
+        color: rgb(252, 251, 251);
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transition: all 0.7s ease;
+        padding: 8px 10px;
+        border-radius: 5px;
+
+    }
+    nav ul li a:hover{
+        background-color: antiquewhite;
+        color: #000;
+    }
+    
+    
+    nav ul li{
+        margin: 0 5px;
+    }
+    @media (max-width: 940px){
+        nav ul{
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background: #1b1b1b;
+            border-top: 1px solid white;
+            width: 100%;
+            
+           
+        }
+        .active{
+            display: none;
+        }
+        .active2{
+            display: none;
+        }
+        nav ul li{
+            margin: 40px 0;
+        }
+        nav ul li a{
+            font-size: 11px;
+            margin-left: 10px;
+            
+
+            background-color: rgb(54, 56, 55)
+        }
+        nav .logo{
+            position: absolute;
+            margin-left: -65px;
+        }
+        section{
+            margin-top: 103px;
+        }
+        
+        
+        
+        
+    
+    }
+   /*end*/
+   /*Slider*/
+
+   section{
+    display: grid;
+    place-items: center;
+   
+    position: absolute;
+   
+   }
+   .slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250%;
+    
+    width: 95%;
+    overflow: hidden;
+    background-color: rgb(201, 207, 205);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    ~:-webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgb(237, 240, 240);
+   }
+   .slider-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    animation: scrolling 40s linear infinite;
+}
+@keyframes scrolling {
+    0%{
+        transform: translateX(20%);
+    }
+    100%{
+        transform: translateX(-80%);
+    }
+}
+.slider-items li{
+    list-style: none;
+}
+section h2{
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #1b1b1b;
+    position: absolute;
+    margin-left: -1150px;
+    align-items: center;
+    padding: 5px;
+    padding-top: 15px;
+    color: white;
+}
+
+
+            
+</style>
+</head>
+<body>
+    
+    
+    <!--Header-->
+
+<nav>
+    <div class="logo"><i class="fa-solid fa-car"></i> Cargent</div>
+   
+    </label>
+    <ul>
+        <li class="active"><a href="new first page.html">My Blog</a></li>
+        <li><a href="frontpage.html">Home</a></li>
+        <li><a href="privacy policy.html">Privacy Policey</a></li>
+        <li><a href="contact us repon.html">Contact Us</a></li>
+        <li class="active2"><a href="#">Feedback</a></li>
+        
+    </ul>
+</nav>
+
+<section>
+    <div class="slider">
+        <div class="slider-items">
+            <li>Honda</li>
+            <li>BMW</li>
+            <li>Audi</li>
+            <li>Civics</li>
+            <li>Suzuki</li>
+            <li>Mehran</li>
+            <li>Honda</li>
+            <li>BMW</li>
+            <li>Audi</li>
+            <li>Civics</li>
+            <li>Suzuki</li>
+            <li>Mehran</li>
+            <li>Honda</li>
+            <li>BMW</li>
+            <li>Audi</li>
+            <li>Civics</li>
+            <li>Suzuki</li>
+            <li>Mehran</li>
+            <li>Honda</li>
+            <li>BMW</li>
+            <li>Audi</li>
+            <li>Civics</li>
+            <li>Suzuki</li>
+            <li>Mehran</li>
+            
+
+           
+            
+        </div>
+        
+    </div>
+    <h2>Top stories</h2>
+   
+</section>
+
+<!--header End-->
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <div class="form-content">
+            <Legend>Contact Us</Legend>
+            
+    
+            <input type="hidden" name="access_key" value="98c823c6-f3fe-4be1-8341-ae17edd67338">
+    
+            <input type="hidden" name="redirect" value="contact-thankyou-page">
+    
+            <input type="hidden" name="subject" value="Hey Abdullah New feedback for your website">
+    
+            <div class="name">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+    
+            <div class="email">
+                <input type="email" name="email" placeholder="Your email" required >
+            </div>
+    
+            <div class="msg">
+                <input type="text" name="Message" placeholder="Your Messgae">
+            </div>
+    
+          
+            <div class="button"><button class="butt">Submit</button>
+                
+            </div>
+        </div>
+    </form> 
+   
+
+  
+
+</body>
+</html>

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzuki Jimny</title>
+    <link rel="icon" href="logo-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+/*headder*/
+
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    
+.logo i:hover{
+    transition: 2s;
+    transform: scale(1.5);
+   }
+   nav .logo{
+    font-size: 43px;
+    color: aliceblue;
+   }
+    nav{
+        height: 80px;
+        background-color: #1b1b1b;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px 0 100px;
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+    }
+    nav ul li a{
+        color: rgb(252, 251, 251);
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transition: all 0.7s ease;
+        padding: 8px 10px;
+        border-radius: 5px;
+
+    }
+    nav ul li a:hover{
+        background-color: antiquewhite;
+        color: #000;
+    }
+    
+    
+    nav ul li{
+        margin: 0 5px;
+    }
+    @media (max-width: 940px){
+        nav ul{
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background: #1b1b1b;
+            border-top: 1px solid white;
+            width: 100%;
+            
+           
+        }
+        .active{
+            display: none;
+        }
+        .active2{
+            display: none;
+        }
+        nav ul li{
+            margin: 40px 0;
+        }
+        nav ul li a{
+            font-size: 11px;
+            margin-left: 10px;
+            
+
+            background-color: rgb(54, 56, 55)
+        }
+        nav .logo{
+            position: absolute;
+            margin-left: -65px;
+        }
+        
+        
+        
+        
+    
+    }
+   /*end*/
+   /*Slider*/
+
+   section{
+    display: grid;
+    place-items: center;
+    margin-top: 15px;
+    position: absolute;
+   
+   }
+   .slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250%;
+    
+    width: 95%;
+    overflow: hidden;
+    background-color: rgb(201, 207, 205);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    ~:-webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgb(237, 240, 240);
+   }
+   .slider-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    animation: scrolling 20s linear infinite;
+}
+@keyframes scrolling {
+    0%{
+        transform: translateX(20%);
+    }
+    100%{
+        transform: translateX(-80%);
+    }
+}
+.slider-items li{
+    list-style: none;
+}
+section h2{
+    width: 130px;
+    height: 33px;
+    border-radius: 5px;
+    background-color: #1b1b1b;
+    position: absolute;
+    margin-left: -1140px;
+    align-items: center;
+    padding: 5px;
+    padding-top: 15px;
+    color: white;
+}
+
+/*footer*/
+
+.container{
+            background-color: #000;
+            color: aliceblue;
+            list-style: none;
+            padding: 25PX;
+            margin-top: 1050px;
+        }
+        
+        .container .f-logo{
+            font-size: 30PX;
+        }
+        .f-logo:hover{
+        cursor: pointer;;
+}
+        .f-box-head{
+            font-size: 30px;
+            margin-left: 200px;
+            margin-top: 30px;
+            
+        }
+        .f-box-head:hover{
+            color: cadetblue;
+            cursor: pointer;
+            transition: 1s;
+    transform: scale(1.1);}
+
+    .f-box2-head:hover{
+        color: cadetblue;
+        cursor: pointer;
+        transition: 1s;
+transform: scale(1.1);}
+.f-box3-head:hover{
+    color: cadetblue;
+    cursor: pointer;
+    transition: 1s;
+transform: scale(1.1);}
+    
+        
+        .f-box1 ul{
+            margin-left: 220px; 
+            margin-top: 10px;
+            line-height: 40px;
+            color: aliceblue;
+            
+        }
+        .f-box1 ul li:hover{
+            color: rgb(15, 83, 85);
+            cursor: pointer;
+            transition: 1s;
+    transform: scale(1.1);}
+    .f-box3 ul li:hover{
+        color: rgb(15, 83, 85);
+        cursor: pointer;
+        transition: 1s;
+transform: scale(1.1);}
+.f-box2 ul li:hover{
+    color: rgb(15, 83, 85);
+    cursor: pointer;
+    transition: 1s;
+transform: scale(1.1);}
+        .f-box1 ul li{
+            list-style: none;
+            
+        }
+        .f-box1 ul li a{
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 20px;
+            list-style: none;
+        }
+        /*BOX2*/
+        .f-box2-head{
+            font-size: 33px;
+            margin-left: 550px;
+            margin-top: -210px;}
+        .f-box2 ul{
+            margin-left: 570px; 
+            margin-top: 10px;
+            line-height: 40px;
+            color: aliceblue;
+            
+        }
+        .f-box2 ul li{
+            list-style: none;
+            
+        }
+        .f-box2 ul li a{
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 20px;
+            list-style: none;
+        }
+
+        /*BOX3*/
+        .f-box3-head{
+            font-size: 33px;
+            margin-left: 970px;
+            margin-top: -210px;}
+        .f-box3 ul{
+            margin-left: 980px; 
+            margin-top: 10px;
+            line-height: 40px;
+            color: rgb(204, 209, 212);
+            
+        }
+        .f-box3 ul li{
+            list-style: none;
+            
+        }
+        .f-box3 ul li a{
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 20px;
+            list-style: none;
+        }
+        /*links*/
+
+        .f-link{
+            align-items: center;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .f-link ul li{
+            list-style: none;
+            
+            display: inline;
+            padding: 15px;
+            
+           
+        }
+        .f-link ul a{
+            color: aliceblue;
+            font-size: 30px;
+        }
+        #f1{
+            color: rgb(60, 218, 60);
+        }
+        #f1:hover{
+            transition: 1s;
+            transform: scale(1.5);
+        }
+        #f2:hover{
+            transition: 1s;
+            transform: scale(1.5);
+        }
+        #f3:hover{
+            transition: 1s;
+            transform: scale(1.5);
+        }
+        #f4:hover{
+            transition: 1s;
+            transform: scale(1.5);
+        }
+        #f2{
+            color: rgb(196, 47, 72);
+        }
+        #f3{
+            color: rgb(36, 36, 253);
+        }
+        #f4{
+            color: rgba(96, 96, 250, 0.801);
+        }
+
+        .fh-link{
+
+        }
+        .fh-link ul li{
+            list-style: none;
+            gap: 15px;
+            display: inline;
+            padding: 25px;
+            
+           
+        }
+        .fh-link ul a{
+            color: aliceblue;
+            font-size: 30px;
+            padding: 5px;
+            x;
+        position: absolute;
+        margin-left: 1000px;
+        margin-top: 25px;
+    }
+    #fh1{
+        color: rgb(60, 218, 60);
+    }
+    #fh2{
+        color: rgb(196, 47, 72);
+    }
+    #fh3{
+        color: rgb(36, 36, 253);
+    }
+    #fh4{
+        color: rgba(96, 96, 250, 0.801);
+    }    
+    #fh1:hover{
+        transition: 1s;
+        transform: scale(1.5);
+    }   
+    #fh2:hover{
+        transition: 1s;
+        transform: scale(1.5);
+    }
+    #fh3:hover{
+        transition: 1s;
+        transform: scale(1.5);
+    }
+    #fh4:hover{
+        transition: 1s;
+        transform: scale(1.5);
+    }
+    .f-logo i:hover{
+        transition: 1s;
+        transform: scale(1.5);
+        cursor: pointer;
+        color: aquamarine;
+    }
+@media (max-width:940px){
+.container{
+   margin-top: 2400px;
+   position: absolute; 
+   width: 89%;
+}
+
+  
+
+
+.f-box1 ul{
+    font-size: PX;
+   margin-left: 5px;
+    
+}
+.f-box2-head{
+    margin-left: 0;
+margin-top: 50px;
+font-size: 25px;}
+.f-box2 ul{
+    margin-left: 5px;
+    margin-top: 30px;
+font-size: 25px;
+}
+.f-link{
+        align-items: center;
+        text-align: center;
+        margin-top: -20px;
+        position: absolute;
+    }
+    .f-link ul li{
+        list-style: none;
+        
+        display: inline;
+        padding: 15px;}
+        .f-box3{
+            display: none;
+        }
+        #fh1,#fh2,#fh3,#fh4{
+            display: none;
+        }
+        section{
+            position: absolute;
+            margin-left: 5px;
+            margin-top: 105px;
+        }
+       
+        
+     }
+        
+  
+
+     .mainbox{
+        
+        position: absolute;
+        margin: 95px 200px;
+        box-shadow: -2PX -2px 18PX rgba(0, 0, 0, 0.5);
+        border: 2px solid rgb(253, 244, 244);
+        width: 850px;
+        height: 120vh;
+        padding: 35px;
+        letter-spacing: 1px;
+     }
+    
+    @media (max-width:940px){
+        .mainbox{
+            position: absolute;
+            margin-top: 185px;
+            margin-left: 25px;
+            width: 200px;
+            height: 2000px;
+        }
+        .none{
+            display: none;
+        }
+       
+        
+       .container .f-logo{
+        font-size: 20PX;
+    }
+    .f-box-head{
+       font-size: 20PX;
+       margin-left: 5px;
+        
+    }
+    
+
+    .f-box1 ul{
+        font-size: PX;
+       margin-left: 5px;
+        
+    }
+    .f-box2-head{
+        margin-left: 0;
+    margin-top: 50px;
+font-size: 25px;}
+    .f-box2 ul{
+        margin-left: 5px;
+        margin-top: 30px;
+    font-size: 25px;
+    }
+    .f-link{
+            align-items: center;
+            text-align: center;
+            margin-top: -20px;
+            position: absolute;
+        }
+        .f-link ul li{
+            list-style: none;
+            
+            display: inline;
+            padding: 15px;}
+     
+
+           
+           
+            /*footer*/
+            .f-box3-head{
+                display: none;
+            }
+            .f-box3  a{
+                display: none;
+            }
+            .fh-link{
+                display: none;
+            } }
+           button{
+            background-color: antiquewhite;
+            padding: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            cursor: pointer;
+           }
+            button:hover{
+                transition: 1s;
+                transform: scale(1.5);
+                
+            }
+
+                /*slide*/
+           .slide-items h2{
+            color: rgb(12, 12, 11);
+            position: absolute;
+            margin-top: 125px;
+            margin-left: 5px;
+            overflow: hidden;
+           }
+          
+ 
+  
+  
+
+.slide-items h2::before{
+        content: "";
+        left: 120%;
+        position: absolute;
+        width: 120%;
+        height: 100%;
+       animation: animate 10s linear infinite ;
+        background: linear-gradient(90deg, transparent 0%, white 5%, white 100%);
+}
+@keyframes animate{
+   0%{
+       left: -20%;
+   }
+   50%{
+       left: 120%;
+   }
+   100%{
+       left: -20%;
+   }
+}
+.slide-box1{
+    width: 180px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 310px 50px;
+    position: absolute;
+    box-shadow: -2PX -2px 18PX rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+
+}
+.slide-img1 img{
+    height: 150px;
+    margin-top: -215px;
+    box-shadow: -2PX -2px 18PX rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 180px;
+}
+.slide-box2{
+    width: 180px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 710px 50px;
+    position: absolute;
+    box-shadow: -2PX -2px 18PX rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+
+}
+.slide-img2 img{
+    height: 150px;
+    margin-top: -215px;
+    box-shadow: -2PX -2px 18PX rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 180px;
+}
+.slide-box3{
+    width: 180px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 1210px 50px;
+    position: absolute;
+    box-shadow: -2PX -2px 18PX rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+
+}
+.slide-img3 img{
+    height: 150px;
+    margin-top: -215px;
+    box-shadow: -2PX -2px 18PX rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 180px;
+}
+@media (max-width:940px){
+    .slide-box3{
+        display: none;
+    }
+    .slide-img3 img{
+        display: none;
+    }
+    .slide-box2{
+        display: none;
+    }
+    .slide-img2 img{
+        display: none;
+    }
+    .slide-box1{
+        display: none;
+    }
+    .slide-img1 img{
+        display: none;
+    }
+    .slide-items h2{
+        display: none;
+    }
+
+}
+
+/*side----bar*/
+
+.slide-box1 p{
+    padding: 8px;
+}
+.slide-box1 h4{
+    margin-left: 8px;
+}
+.slide-box1 a{
+    text-decoration: none;
+}
+.slide-box2 p{
+    padding: 8px;
+}
+.slide-box2 h4{
+    margin-left: 8px;
+}
+.slide-box2 a{
+    text-decoration: none;
+}
+.slide-box3 p{
+    padding: 8px;
+}
+.slide-box3 h4{
+    margin-left: 8px;
+}
+.slide-box3 a{
+    text-decoration: none;
+}
+
+
+           
+           
+            
+    
+
+
+
+</style>
+<body>
+    
+
+<!--Header-->
+
+<nav>
+    <div class="logo"><i class="fa-solid fa-car"></i> Cargent</div>
+   
+    </label>
+    <ul>
+        <li class="active"><a href="new first page.html">My Blog</a></li>
+        <li><a href="frontpage.html">Home</a></li>
+        <li><a href="privacy policy.html">Privacy Policey</a></li>
+        <li><a href="contact us repon.html">Contact Us</a></li>
+        <li class="active2"><a href="#">Feedback</a></li>
+        
+    </ul>
+</nav>
+
+<section>
+    <div class="slider">
+        <div class="slider-items">
+            <li>Honda</li>
+            <li>BMW</li>
+            <li>Audi</li>
+            <li>Civics</li>
+            <li>Suzuki</li>
+            <li>Mehran</li>
+            <li>Honda</li>
+            <li>BMW</li>
+            <li>Audi</li>
+            <li>Civics</li>
+            <li>Suzuki</li>
+            <li>Mehran</li>
+            <li>Honda</li>
+            <li>BMW</li>
+            <li>Audi</li>
+            <li>Civics</li>
+            <li>Suzuki</li>
+            <li>Mehran</li>
+            <li>Honda</li>
+            <li>BMW</li>
+            <li>Audi</li>
+            <li>Civics</li>
+            <li>Suzuki</li>
+            <li>Mehran</li>
+            
+
+           
+            
+        </div>
+        
+    </div>
+    <h2>Top stories</h2>
+   
+</section>
+
+<!--header End-->
+
+
+<div class="mainbox"><h2>Suzuki Jimny</h2><br><p>Suzuki Vitara is a stunning example of high-performance engineering and design. Launched in 2015<br><br>
+    <ol><br>
+        The Suzuki Jimny is a compact, off-road vehicle known for its rugged design and versatility. It has a storied history, dating back to its first release in 1968. Here are some key points about the Jimny:
+<br>
+       <h2> Design and Build</h2><br>
+        <h4>Size:</h4> The Jimny is known for its small size and boxy shape, which contribute to its excellent maneuverability and off-road capabilities.<br>
+        <h4>Frame:</h4> It typically features a body-on-frame construction, which enhances durability and off-road performance.<br>
+        <h4>Ground Clearance:</h4> The Jimny has high ground clearance, allowing it to tackle rough terrain with ease.<br>
+       <h2>Performance</h2> 
+                <h4>Engine:</h4> The Jimny usually comes with a small, fuel-efficient engine. In recent models, it's often equipped with a 1.5-liter engine, which strikes a balance between power and economy.<br>
+        <h4>Transmission:</h4> It often features a 4x4 system with low-range gearing, which is essential for serious off-road driving.<br>
+        <h4>Suspension:</h4> The vehicle is equipped with a solid rear axle and a live axle in the front, which are robust for off-road conditions.<br>
+        <h2>Interior and Features</h2><br>
+        <h4>Interior Space:</h4> Despite its compact size, the Jimny has a surprisingly functional interior, with enough space for a small group of passengers and their gear.<br>
+        <h4>Technology:</h4> Recent models have incorporated modern features like touchscreen infotainment systems, advanced safety features, and improved climate control.<br>
+        <br><br>
+        
+</ol>
+Overall, the Chevrolet Corvette remains a quintessential American sports car, celebrated for its blend of performance, innovation, and design excellence.
+
+
+    ---</p><button>BMW</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>Civice</button></div></div>
+
+
+   
+
+    <!--FOOTER-->
+
+    <div class="container">
+
+        <div class="fh-link">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-whatsapp" id="fh1"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" id="fh2"></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"id="fh3"></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-skype" id="fh4"></i></i></a></li>
+            </ul>
+
+        </div>
+        <div class="f-logo">CARAGENT <i class="fa-solid fa-car"></i></div>
+        <br><hr>
+        <!--box1-->
+        <div class="f-box1">
+            <div class="f-box-head"><i class="fa-solid fa-arrow-up-right-from-square"></i> QUICK LINKS </div>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house-user"></i> Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone-volume"></i> Contact us</a></li>
+                <li><a href="#"><i class="fa-solid fa-shield-halved"></i> privacy Policey</a></li>
+                <li><a href="#"><i class="fa-regular fa-address-card"></i> About us</a></li>
+            </ul>
+        </div>
+        <!--box1 end-->
+
+        <!--box2-->
+        <div class="f-box2">
+            <div class="f-box2-head"><i class="fa-solid fa-copyright"></i> Our Brands</div>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-car"></i> BMW</a></li>
+                <li><a href="#"><i class="fa-solid fa-car"></i> HONDA</a></li>
+                <li><a href="#"><i class="fa-solid fa-car"></i> CIVICES</a></li>
+                <li><a href="#"><i class="fa-solid fa-car"></i> SUZUKI</a></li>
+            </ul>
+        </div>
+        <!--box2 end-->
+        <!--box3-->
+        <div class="f-box3">
+            <div class="f-box3-head"><i class="fa-solid fa-file-signature"></i> Contact us</div>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-mobile-screen-button"></i> +92 3114748179</a></li>
+                <li><a href="#"><i class="fa-solid fa-mobile-screen-button"></i> +92 3014117623</a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope-circle-check"></i> abdullahbussines@gmail.com</a></li>
+                <li><a href="#"><i class="fa-solid fa-location-dot"></i> Lahore,Pakistan</a></li>
+            </ul>
+        </div>
+        <!--end book-->
+
+        <!--links-->
+        <br>
+        <br><br>
+        <div class="f-link">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-whatsapp" id="f1"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" id="f2"></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"id="f3"></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-skype" id="f4"></i></i></a></li>
+            </ul>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <!--links end-->
+    </div>
+    <!--FOOTER END-->
+    
+
+
+</body>
+</html>
